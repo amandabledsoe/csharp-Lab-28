@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*Create the needed forms to get the input by Id for either a planet or a person
+    then, go create the actions in your controller.*@
+<form action="/Home/GetPersonById" method="post">
+    <input type="number" name="id" placeholder="Enter Person Id" />
+    <input type="submit" value="Find Your Person" />
+</form>
+<br />
+<form action="/Home/GetPlanetById" method="post">
+    <input type="number" name="id" placeholder="Enter Planet Id" />
+    <input type="submit" value="Find Your Planet" />
+</form>
